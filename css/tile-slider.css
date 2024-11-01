@@ -1,0 +1,189 @@
+.tile-container{
+    padding: 15px 15px;
+}
+.tile-slideshow{
+    /* The slideshow container div */
+    height:400px;
+    margin:0 auto;
+    position:relative;
+    max-width: 100%;
+    width:960px;
+    border: 5px solid #ccc;
+    border-bottom: 30px solid #ccc;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.60);
+    -moz-box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.60);
+    -webkit-box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.60);
+}
+.tile-slideshow>img{
+    position: absolute;
+}
+.tile-slide { margin-top/*\**/: 0px\9; }
+:root .tile-slide { margin-top:0px \0/IE9; }  /* IE9 */
+.tile-slide{
+    /* This class is shared between all the slides */
+    position:absolute;
+    overflow: hidden;
+    /*IE * and below hack*/
+    _margin-top:0px;
+    max-height: 100%;
+}
+
+.tile{
+    /* The individual tiles */
+    position: relative;
+    height:80px;
+    width:80px;
+    float:left;
+}
+.tile-nav{
+    padding: 5px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    bottom: -25px;
+    z-index: 1800;
+}
+.tile-nav .bullet{
+    display: block;
+    float: left;
+}
+.tile-nav .bullet a{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/bullets.png)0px -15px;
+    float: left;
+}
+.tile-nav .active a{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/bullets.png) 0px 0px;
+    float: left;
+}
+.tile-slideshow .arrow{
+    /* The prev/next arrows */
+    width:30px;
+    height:60px;
+    background:url("../images/arrows.png") no-repeat;
+    position:absolute;
+    cursor:pointer;
+    top:50%;
+    margin-top:-30px;
+    z-index: 1800;
+}
+.tile-slide{
+    width: 100%;
+}
+.tile-slideshow .arrow.left{
+    background-position:center top;
+    left: 0px;
+}
+.tile-slideshow .htile{
+    width: 100%!important;
+}
+.tile-slideshow .arrow.left:hover{
+    background-position:center -60px;
+}
+
+.tile-slideshow .arrow.right{
+    right:0px;
+    background-position:center -120px;
+}
+
+.tile-slideshow .arrow.right:hover{
+    background-position:center -180px;
+}
+
+.clear{
+    /* This class clears the floats */
+    clear:both;
+}
+.new-slide>.tile{
+    display:block;
+    background:transparent;
+    visibility:hidden;
+    position: relative;
+}
+.new-slide>.tile>.tile{
+    width:0px;
+    height:0px;
+    margin-top:40px;
+    margin-left:40px;
+}
+/*
+Strip Animation Styles*/
+.new-slice-slide{
+    overflow: hidden;
+}
+.new-slice-slide>.tile>.tile{
+    top:-400px;
+    visibility: visible;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.tile-navthumb{
+    width: 140px;
+    background: url(../images/bullets-bgd.png);
+    position: absolute;
+    z-index: 1800;
+    padding: 5px;
+    visibility: hidden;
+}
+.navthumb-outer{
+    width: 140px;
+    overflow: hidden;
+}
+.navthumb-tip{
+    position: absolute;
+    width: 100%;
+    top:80px;
+    left: -5px;
+    height: 10px;
+    z-index: 1800;
+    background: url(../images/thumb-tip.png) no-repeat center center;
+}
+.navthumb-inner{
+    width: 840px;
+}
+.navthumb-inner .nav-img{
+    max-width: 140px;
+    max-height: 100px;
+    display: block;
+}
+.navthumb-inner .preview{
+    max-width: 140px;
+    max-height: 100px;
+    display: block;
+    float: left;
+}
+.caption{
+    position: absolute;
+    z-index: 180;
+    width: 100%;
+    bottom: 0px;
+}
+.caption.displayed{
+    background: url(../images/bullets-bgd.png);
+    padding-bottom: 5px;
+}
+.caption h2,
+.caption h3,
+.caption h4,
+.caption h5,
+.caption h6{
+    color: #fff;
+        padding-left: 5px;
+
+}
+.caption p{
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    margin: 0px;
+    margin-bottom: 10px;
+        padding-left: 5px;
+
+}

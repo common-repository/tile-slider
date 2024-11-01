@@ -1,0 +1,167 @@
+/* 
+    Document   : tile-slider-admin
+    Created on : Feb 3, 2012, 11:04:07 PM
+    Author     : Rajesh
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+  
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+#icon-tile{
+    background: transparent url(../images/icon-page.gif) no-repeat;
+}
+.tile-three-col{
+    width: 120px;
+    display: inline-block;
+    margin: 10px;
+    z-index: 150;
+    position: relative;
+}
+.tile-delete-slide{
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    background: url('../images/delete.png') center center #ffffff;
+    width: 20px;
+    height: 20px;
+    z-index: 99;
+    cursor: pointer;
+}
+.tile-three-col img{
+    max-width: 95%;
+    max-height: 95%;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #e2e2e2;
+    background: #fff;
+}
+.tile-hndle{
+    cursor: default!important;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.tile-hndle span{
+    background: transparent url(../images/slide-icon.gif) no-repeat;
+    padding-left: 25px;
+}
+.tile-slider-hndle span{
+    background: transparent url(../images/slider-icon.gif) no-repeat!important;
+    padding-left: 25px;
+}
+/*
+Making Pagination Bolder
+*/
+.tile-admin-nav a{
+    font-weight: bold!important;
+}
+.tile-admin-nav .tile-nav-item{
+    width: 48%;
+    display: inline-block;
+}
+.tile-admin-nav .tile-nav-item.right-side{
+    text-align: right;
+}
+.tile-admin-nav a:hover,
+.tile-admin-nav a:active,
+.tile-admin-nav a:focus,
+.tile-active{
+    color: #D54E21;
+}
+.tile-admin-slider{
+    width: 100%;
+    margin: 20px 0px;
+    border: 1px solid #DFDFDF;
+    background-color: #F1F1F1;
+    background-image: -ms-linear-gradient(top,#f9f9f9,#ececec);
+    background-image: -moz-linear-gradient(top,#f9f9f9,#ececec);
+    background-image: -o-linear-gradient(top,#f9f9f9,#ececec);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f9f9f9),to(#ececec));
+    background-image: -webkit-linear-gradient(top,#f9f9f9,#ececec);
+    background-image: linear-gradient(top,#f9f9f9,#ececec);
+    cursor: default!important;
+    -webkit-border-radius: 3px;
+    border-top-: 3px;
+}
+.tile-admin-slider .tile-slide-count{
+    padding: 7px 10px;
+    width: 95%;
+    display: inline-block;
+}
+.tile-admin-slider h3{
+    cursor: default!important;
+}
+.tile-admin-slider a.add-new-h2{
+    margin-left: 0px!important;
+    text-decoration: none!important;
+}
+.tile-slide-count img{
+    max-width: 40px;
+    max-height: 40px;
+    display: block;
+}
+.tile-slide-count span{
+    display: inline-block;
+}
+.tile-slide-edit{
+    cursor: pointer;
+}
+.tile-slider-links{
+    float: right;
+    margin-top: 5px;
+}
+/*
+UI Styling
+*/
+
+.tile-loading{
+    display: block;
+    position: absolute;
+    padding: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 0%;
+    left: 47%;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 9999999;
+}
+#tile-image-upload{
+    width: 100px;
+}
+.tile-form-image{
+    padding: 5px;
+    border: 1px solid #e2e2e2;
+    background: #fff;
+}
+#shrink_n_fade,
+#show_titles{
+    width: 13px!important;
+}
+.tile-picked,.tile-greedy-slider,.tile-slider-drop{
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    z-index: 1000;
+}
+
+.tile-slider-drop{
+    background: #fff;
+}
+.tile-drop-error{
+    background: #f3d8d8!important;
+}
+.tile-drop-success{
+    background:#d8f3dd!important;
+}
+.tile-slider-code{
+    background: none!important;
+}
